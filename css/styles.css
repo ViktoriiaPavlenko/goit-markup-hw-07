@@ -38,6 +38,15 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+}
 h1,
 h2,
 h3,
@@ -65,7 +74,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
-.footer-logo {
+.contacts__logo {
   display: flex;
   margin-bottom: 20px;
 }
@@ -81,7 +90,7 @@ img {
 .page-header {
   border-bottom: 1px solid var(--header-border);
 }
-.header-content,
+.page-header__container,
 .main-nav {
   display: flex;
   align-items: center;
@@ -272,15 +281,6 @@ img {
 .occupation-section {
   padding-top: 47px;
   padding-bottom: 94px;
-}
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-
-  color: var(--title-text-color);
 }
 .works-list {
   display: flex;
@@ -521,7 +521,7 @@ img {
 
   background-color: var(--third-background-color);
 }
-.footer-container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -598,7 +598,7 @@ img {
   display: flex;
   align-items: center;
 }
-.subscribe__label .subscribe__input::placeholder {
+.subscribe__input::placeholder {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
