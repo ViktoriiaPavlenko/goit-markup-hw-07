@@ -5,13 +5,13 @@
   --accent-color: #2196f3;
   --second-background-color: #f5f4fa;
   --third-background-color: #2f303a;
-  --second-logo-color: #000000;
+  --header-logo-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
   --button-bgc: #188ce8;
   --header-border: #ececec;
   --portfolio-border: #eeeeee;
   --icon-color: #afb1b8;
-  --footer-link-bgc: rgba(255, 255, 255, 0.1);
+  --footer-icon-bgc: rgba(255, 255, 255, 0.1);
   --hero-bgc: #c4c4c4;
   --card-set-gap: 30px;
   --transition-duration: 250ms;
@@ -75,7 +75,7 @@ img {
   line-height: 1.2;
 }
 .page-header__logo {
-  color: var(--second-logo-color);
+  color: var(--header-logo-color);
 }
 .contacts__logo {
   display: flex;
@@ -603,7 +603,7 @@ img {
   width: 44px;
   height: 44px;
   text-decoration: none;
-  background: var(--footer-link-bgc);
+  background: var(--footer-icon-bgc);
   border-radius: 50%;
 
   transition: background-color var(--transition-duration) var(--transition-timing-function);
