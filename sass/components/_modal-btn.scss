@@ -1,0 +1,27 @@
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: $primaryWhiteColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.modal__close-icon {
+  fill: currentColor;
+
+  transition: fill $transitionDuration $transitionTimingFunction;
+
+  .modal__close-button:hover &,
+  .modal__close-button:focus & {
+    fill: $accentColor;
+  }
+}
