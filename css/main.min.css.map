@@ -5,7 +5,7 @@
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
         "../sass/utils/_placeholders.scss",
-        "../sass/utils/_mixin.scss",
+        "../sass/utils/_mixins.scss",
         "../sass/utils/_visually-hidden.scss",
         "../sass/base/_common.scss",
         "../sass/base/_container.scss",
