@@ -1,4 +1,4 @@
-.hero__button, .portfolio__button {
+.hero__button, .portfolio__button, .subscribe__button, .modal-form__button {
   display: inline-block;
   border-radius: 4px;
   border: none;
@@ -6,6 +6,12 @@
   font-family: inherit;
   font-size: 16px;
   text-align: center;
+}
+
+.feature-list__icon, .worker-card__social-link, .clients-list__link, .portfolio__filter-list, .join__link, .modal__close-button, .modal-form__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .visually-hidden {
@@ -243,9 +249,6 @@ img {
 }
 
 .feature-list__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -348,9 +351,6 @@ img {
 }
 
 .worker-card__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -386,12 +386,9 @@ img {
 }
 
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -416,9 +413,6 @@ img {
 }
 
 .portfolio__filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
   margin-top: 0;
 }
@@ -494,8 +488,8 @@ img {
 }
 
 .card__content {
-  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
   border-top: none;
 }
 
@@ -575,9 +569,6 @@ img {
 }
 
 .join__link {
-  align-items: center;
-  justify-content: center;
-  display: flex;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -604,6 +595,7 @@ img {
 }
 
 .subscribe__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -612,7 +604,6 @@ img {
   line-height: 1.25;
   background: transparent;
   color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -628,10 +619,7 @@ img {
   padding: 10px 28px 10px 29px;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 
 .subscribe__button:hover, .subscribe__button:focus {
@@ -640,7 +628,6 @@ img {
 
 .subscribe__text {
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   margin-right: 10px;
@@ -686,18 +673,15 @@ img {
 }
 
 .modal__close-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   width: 30px;
   height: 30px;
   padding: 0;
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
@@ -742,9 +726,9 @@ img {
 }
 
 .modal-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
   padding: 11px 12px 11px 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
 }
@@ -772,11 +756,11 @@ img {
 }
 
 .modal-form__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
   height: 120px;
   resize: none;
   padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -794,9 +778,6 @@ img {
 }
 
 .modal-form__checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -837,16 +818,12 @@ img {
 
 .modal-form__button {
   padding: 10px 55px 10px 56px;
-  border: none;
-  border-radius: 4px;
   margin: 0 auto;
-  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 }

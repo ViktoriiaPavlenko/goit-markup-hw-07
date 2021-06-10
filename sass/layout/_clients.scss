@@ -11,20 +11,19 @@
   }
 }
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include bordered($iconColor);
+  @extend %flex;
+
   width: 170px;
   height: 92px;
-  border: 1px solid $iconColor;
   border-radius: 4px;
 
   transition: border $transitionDuration $transitionTimingFunction;
 
   &:hover,
   &:focus {
-  border: 1px solid $accentColor;
-}
+    @include bordered($accentColor);
+  }
 }
 .clients-list__icon {
   fill: $iconColor;
@@ -33,7 +32,6 @@
 
   .clients-list__link:hover &,
   .clients-list__link:focus & {
-  fill: $accentColor;
+    fill: $accentColor;
+  }
 }
-}
-

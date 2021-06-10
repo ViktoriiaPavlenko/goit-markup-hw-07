@@ -3,9 +3,7 @@
   padding-bottom: 94px;
 }
 .portfolio__filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   margin-bottom: 50px;
   margin-top: 0;
 }
@@ -89,8 +87,8 @@
   color: $primaryWhiteColor;
 }
 .card__content {
+  @include bordered($portfolioBorderColor);
   padding: 20px 24px;
-  border: 1px solid $portfolioBorderColor;
   border-top: none;
 }
 .card__title {
